@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 22nd Birthday, Nandana / Kunju </title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="A personal and respectful 22nd birthday tribute to a worth gem, Joe (Nandana Anilkumar). Turn 22 with love, accomplishments, and moments.">
+  <meta name="author" content="Edwin Vincent">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Alex+Brush&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind Theme Customization -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#FAF6F0',
+              clay: '#4A4540',
+              stone: '#736B64',
+              sage: '#8F9779',
+              'sage-light': '#F0F2EB',
+              champagne: '#EADBC8',
+              'champagne-light': '#F6EFE6',
+              rose: '#E8C8BE',
+              'rose-light': '#FAF0ED',
+              dark: '#2E2B28',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            cursive: ['"Alex Brush"', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styling -->
+  <style>
+    body {
+      background-color: #FAF6F0;
+      color: #4A4540;
+      overflow-x: hidden;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #FAF6F0;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #8F9779;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #736B64;
+    }
+
+    /* Falling Petals */
+    #petals-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .petal {
+      position: absolute;
+      top: -20px;
+      border-radius: 150% 0 150% 150%;
+      pointer-events: none;
+      animation: fall linear forwards;
+      transform-origin: center;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-5vh) rotate(0deg) translateX(0px);
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 0.8;
+      }
+
+      90% {
+        opacity: 0.8;
+      }
+
+      100% {
+        transform: translateY(105vh) rotate(540deg) translateX(80px);
+        opacity: 0;
+      }
+    }
+
+    /* Drift Queen Emoji Animation */
+    .drift-track {
+      position: relative;
+    }
+
+    .drift-car {
+      position: absolute;
+      bottom: 12px;
+      left: -60px;
+      font-size: 1.6rem;
+      pointer-events: none;
+      opacity: 0;
+      white-space: nowrap;
+      transition: none;
+    }
+
+    .drifting {
+      animation: drift-across 2.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+
+    @keyframes drift-across {
+      0% {
+        left: -60px;
+        transform: rotate(0deg) scale(0.9);
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 1;
+      }
+
+      35% {
+        left: 35%;
+        transform: rotate(-15deg) translateY(-8px) scale(1);
+      }
+
+      50% {
+        left: 50%;
+        transform: rotate(20deg) translateY(6px) scale(1);
+      }
+
+      75% {
+        left: 75%;
+        transform: rotate(-15deg) translateY(-8px) scale(1);
+      }
+
+      90% {
+        left: 98%;
+        transform: rotate(0deg) scale(0.95);
+        opacity: 1;
+      }
+
+      100% {
+        left: 115%;
+        transform: rotate(0deg) scale(0.9);
+        opacity: 0;
+      }
+    }
+
+    /* Music Bouncing Waves */
+    .wave-bar {
+      width: 3px;
+      height: 3px;
+      background-color: #8F9779;
+      border-radius: 2px;
+      transition: height 0.2s ease;
+    }
+
+    .wave-playing .wave-bar:nth-child(1) {
+      animation: bounce 0.8s infinite 0.1s alternate;
+    }
+
+    .wave-playing .wave-bar:nth-child(2) {
+      animation: bounce 0.8s infinite 0.4s alternate;
+    }
+
+    .wave-playing .wave-bar:nth-child(3) {
+      animation: bounce 0.8s infinite 0.2s alternate;
+    }
+
+    .wave-playing .wave-bar:nth-child(4) {
+      animation: bounce 0.8s infinite 0.6s alternate;
+    }
+
+    .wave-playing .wave-bar:nth-child(5) {
+      animation: bounce 0.8s infinite 0.3s alternate;
+    }
+
+    @keyframes bounce {
+      0% {
+        height: 4px;
+      }
+
+      100% {
+        height: 18px;
+      }
+    }
+
+    /* Glassmorphism utility */
+    .glass {
+      background: rgba(250, 246, 240, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+  </style>
+</head>
+
+<body
+  class="font-sans antialiased bg-brand-bg min-h-screen flex flex-col selection:bg-brand-sage/20 selection:text-brand-clay">
+
+  <!-- ================= TIMER / UNLOCK SCREEN ================= -->
+  <div id="unlock-screen"
+    class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-brand-bg px-6 py-12 transition-all duration-1000 ease-in-out">
+    <!-- Floral/Botanical Backdrop elements -->
+    <div id="petals-container"></div>
+
+    <!-- Decorative top floral border SVG -->
+    <div class="w-24 h-24 mb-6 opacity-30 text-brand-sage animate-pulse">
+      <svg viewBox="0 0 100 100" fill="currentColor" class="w-full h-full">
+        <path d="M50 15 C45 30, 25 35, 20 50 C15 65, 35 70, 50 85 C65 70, 85 65, 80 50 C75 35, 55 30, 50 15 Z" />
+        <path d="M50 25 C47 35, 33 40, 30 50 C27 60, 40 63, 50 75 C60 63, 73 60, 70 50 C67 40, 53 35, 50 25 Z"
+          opacity="0.5" />
+      </svg>
+    </div>
+
+    <!-- Main Countdown Card -->
+    <div
+      class="relative z-20 max-w-2xl w-full text-center px-8 py-10 rounded-3xl border border-brand-champagne bg-white/40 shadow-sm backdrop-blur-md">
+      <h2 class="font-serif text-3xl md:text-4xl text-brand-clay mb-2 tracking-wide">A small gift for youu
+      </h2>
+
+       
+      <p id="unlock-msg"
+        class="font-sans text-brand-stone tracking-wider text-sm uppercase mb-8 cursor-pointer select-none"
+        title="Triple-click to preview">Patience, worth gem. Unveiling on June 24.
+      </p>
+      
+      <!-- Countdown Numbers Wrapper -->
+      <div id="countdown-wrapper" class="grid grid-cols-4 gap-4 max-w-lg mx-auto mb-10 transition-opacity duration-500">
+        <!-- Days -->
+        <div
+          class="flex flex-col items-center p-3 rounded-2xl bg-brand-champagne-light border border-brand-champagne/30">
+          <span id="days" class="font-serif text-4xl md:text-5xl font-light text-brand-clay">00</span>
+          <span
+            class="font-sans text-[10px] md:text-xs text-brand-stone font-semibold uppercase tracking-widest mt-1">Days</span>
+        </div>
+        <!-- Hours -->
+        <div
+          class="flex flex-col items-center p-3 rounded-2xl bg-brand-champagne-light border border-brand-champagne/30">
+          <span id="hours" class="font-serif text-4xl md:text-5xl font-light text-brand-clay">00</span>
+          <span
+            class="font-sans text-[10px] md:text-xs text-brand-stone font-semibold uppercase tracking-widest mt-1">Hours</span>
+        </div>
+        <!-- Minutes -->
+        <div
+          class="flex flex-col items-center p-3 rounded-2xl bg-brand-champagne-light border border-brand-champagne/30">
+          <span id="minutes" class="font-serif text-4xl md:text-5xl font-light text-brand-clay">00</span>
+          <span
+            class="font-sans text-[10px] md:text-xs text-brand-stone font-semibold uppercase tracking-widest mt-1">Mins</span>
+        </div>
+        <!-- Seconds -->
+        <div
+          class="flex flex-col items-center p-3 rounded-2xl bg-brand-champagne-light border border-brand-champagne/30">
+          <span id="seconds" class="font-serif text-4xl md:text-5xl font-light text-brand-clay">00</span>
+          <span
+            class="font-sans text-[10px] md:text-xs text-brand-stone font-semibold uppercase tracking-widest mt-1">Secs</span>
+        </div>
+      </div>
+
+      <!-- Action Button Container (Unlocked/Bypassed State) -->
+      <div id="action-container" class="hidden opacity-0 transform translate-y-4 transition-all duration-700">
+        <button id="enter-btn"
+          class="relative group overflow-hidden px-10 py-4 bg-brand-sage text-white font-sans font-semibold tracking-widest uppercase rounded-full shadow-lg hover:bg-brand-clay transition-all duration-300 hover:scale-[1.03] active:scale-95">
+          <span class="relative z-10">Enter Message</span>
+          <div class="absolute inset-0 bg-brand-clay w-0 group-hover:w-full transition-all duration-500 ease-out -z-0">
+          </div>
+        </button>
+        <p class="text-xs text-brand-stone mt-3 font-sans">Click to play sound & open tribute</p>
+      </div>
+    </div>
+
+    <!-- Background music asset loader (Preloaded, loops, triggered on user action) -->
+    <audio id="bg-audio" src="song/Oro Nokil.mp3" loop preload="auto"></audio>
+  </div>
+
+  <!-- ================= MAIN WEBSITE CONTENT (Initially Hidden) ================= -->
+  <div id="main-content" class="hidden opacity-0 flex-grow w-full transition-opacity duration-1000 ease-in-out">
+
+    <!-- Elegant Minimal Top Nav Header -->
+    <header
+      class="w-full py-6 px-6 md:px-12 flex justify-between items-center border-b border-brand-champagne/20 bg-brand-bg/85 sticky top-0 z-40 backdrop-blur-sm">
+      <div class="font-serif text-2xl font-bold tracking-widest text-brand-clay">Kunju</div>
+      <div class="font-serif text-lg italic text-brand-stone">June 24, 2026</div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section
+      class="relative min-h-[90vh] flex flex-col justify-center items-center px-6 py-12 md:py-20 text-center bg-gradient-to-b from-brand-bg to-brand-champagne-light overflow-hidden">
+      <!-- Background floral accents -->
+      <div class="absolute -top-12 -left-12 w-64 h-64 text-brand-champagne opacity-20 pointer-events-none">
+        <svg fill="currentColor" viewBox="0 0 100 100" class="w-full h-full">
+          <path d="M50 0 C40 30, 10 40, 0 50 C10 60, 40 70, 50 100 C60 70, 90 60, 100 50 C90 40, 60 30, 50 0 Z" />
+        </svg>
+      </div>
+      <div class="absolute -bottom-12 -right-12 w-80 h-80 text-brand-sage opacity-15 pointer-events-none">
+        <svg fill="currentColor" viewBox="0 0 100 100" class="w-full h-full">
+          <path d="M50 0 C40 30, 10 40, 0 50 C10 60, 40 70, 50 100 C60 70, 90 60, 100 50 C90 40, 60 30, 50 0 Z" />
+        </svg>
+      </div>
+
+      <div class="max-w-4xl w-full flex flex-col items-center animate-on-scroll">
+        <span class="font-sans text-xs md:text-sm uppercase tracking-[0.4em] text-brand-stone font-semibold mb-4">A
+          Celebratory Tribute</span>
+
+        <!-- Big elegant date -->
+        <h1
+          class="font-serif text-6xl md:text-8xl lg:text-9xl font-light tracking-wide text-brand-clay mb-2 leading-none">
+          It's June 24
+        </h1>
+
+        <!-- Rotating cursive birthday header -->
+        <h2 id="hero-birthday-title"
+          class="font-serif text-3xl md:text-5xl text-brand-sage italic tracking-wider mb-12">
+          Happy 22nd Birthday , Nandana
+        </h2>
+
+        <!-- Fine Art Polaroid Image Frame -->
+        <div class="relative group">
+          <!-- Double shadow layout -->
+          <div
+            class="absolute inset-0 bg-brand-clay/5 rounded-3xl transform rotate-2 translate-x-2 translate-y-3 blur-md">
+          </div>
+          <div
+            class="relative bg-white p-4 md:p-6 pb-12 md:pb-16 rounded-lg border border-brand-champagne shadow-md transform -rotate-1 hover:rotate-0 transition-transform duration-700 max-w-sm md:max-w-md">
+            <div class="overflow-hidden rounded-md bg-brand-bg">
+
+              <img src="pictures/Screenshot_2023-06-26-11-02-52-38_6012fa4d4ddec268fc5c7112cbb265e7.webp"
+                alt="Joe Portrait"
+                class="w-full h-[360px] md:h-[420px] object-cover hover:scale-105 transition-transform duration-1000 ease-out">
+            </div>
+            <!-- Handwritten Polaroid caption -->
+            <div class="absolute bottom-3 md:bottom-4 left-0 right-0 text-center">
+              <span class="font-serif text-xl md:text-2xl text-brand-clay italic tracking-wide">Nandana Anilkumar —
+                Kunju </span>
+            </div>
+          </div>
+        </div>
+
+        <p class="font-sans text-sm md:text-base text-brand-stone tracking-wide max-w-md mt-12 leading-relaxed">
+          Correct 22 varshangalulkk mumbu ennai divasam Saudi Arabia-le etho oru  hospital-il janicha Saudi Fundaku ente Happie Birthday!
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. Interactive Achievements Wall -->
+    <section class="py-20 px-6 md:px-12 bg-white/40 border-y border-brand-champagne/30 relative">
+      <div class="max-w-6xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="text-center mb-12 animate-on-scroll">
+          <span class="font-sans text-xs uppercase tracking-[0.4em] text-brand-stone font-semibold mb-2 block">Chronicle
+            of Excellence</span>
+          <h2 class="font-serif text-4xl md:text-5xl text-brand-clay">The Achievements Wall</h2>
+          <div class="w-16 h-[2px] bg-brand-sage mx-auto mt-4"></div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12 animate-on-scroll">
+          <button onclick="filterAchievements('all')"
+            class="filter-btn px-5 py-2.5 text-xs font-sans font-semibold uppercase tracking-wider rounded-full border border-brand-sage bg-brand-sage text-white shadow-sm transition-all duration-300 active:scale-95"
+            data-filter="all">
+            All Achievements
+          </button>
+          <button onclick="filterAchievements('tech')"
+            class="filter-btn px-5 py-2.5 text-xs font-sans font-semibold uppercase tracking-wider rounded-full border border-brand-sage/20 bg-white text-brand-clay shadow-sm hover:border-brand-sage/60 transition-all duration-300 active:scale-95"
+            data-filter="tech">
+            Tech & Leadership
+          </button>
+          <button onclick="filterAchievements('academics')"
+            class="filter-btn px-5 py-2.5 text-xs font-sans font-semibold uppercase tracking-wider rounded-full border border-brand-sage/20 bg-white text-brand-clay shadow-sm hover:border-brand-sage/60 transition-all duration-300 active:scale-95"
+            data-filter="academics">
+            Academic Excellence
+          </button>
+          <button onclick="filterAchievements('military')"
+            class="filter-btn px-5 py-2.5 text-xs font-sans font-semibold uppercase tracking-wider rounded-full border border-brand-sage/20 bg-white text-brand-clay shadow-sm hover:border-brand-sage/60 transition-all duration-300 active:scale-95"
+            data-filter="military">
+            Military & Discipline
+          </button>
+          <button onclick="filterAchievements('special')"
+            class="filter-btn px-5 py-2.5 text-xs font-sans font-semibold uppercase tracking-wider rounded-full border border-brand-sage/20 bg-white text-brand-clay shadow-sm hover:border-brand-sage/60 transition-all duration-300 active:scale-95"
+            data-filter="special">
+            Special Title
+          </button>
+        </div>
+
+        <!-- Achievement Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+
+          <!-- Category: Tech & Leadership -->
+          <div
+            class="achievement-card border border-brand-champagne bg-white/70 p-8 rounded-3xl shadow-sm hover:shadow-md transition-all duration-300"
+            data-category="tech">
+            <div class="flex items-start gap-4 mb-6">
+              <div class="p-3 bg-brand-sage-light rounded-2xl text-brand-sage">
+                <!-- Tech / Leadership Network Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.079-13.13a3 3 0 115.658-1.88 3 3 0 01-5.658 1.88zM12 4.5a3 3 0 110 6 3 3 0 010-6zm-7.144 6.37a3 3 0 115.658 1.88 3 3 0 01-5.658-1.88z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-serif text-2xl text-brand-clay font-bold">Innovation & Tech Leadership</h3>
+                <p class="font-sans text-xs text-brand-stone font-semibold uppercase tracking-widest mt-1">Edge IEDC,
+                  E-Cell & MuLearn Coordinator</p>
+              </div>
+            </div>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="text-brand-sage text-lg mt-0.5">•</span>
+                <span class="font-sans text-sm text-brand-clay"><strong class="text-brand-dark">Edge IEDC Executive
+                    Committee:</strong> Community Lead, managing student developer networks and orchestrating tech
+                  meetups.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-brand-sage text-lg mt-0.5">•</span>
+                <span class="font-sans text-sm text-brand-clay"><strong class="text-brand-dark">E-Cell Core Team
+                    Member:</strong> Driving entrepreneurial spirits and coordinating campus incubation programs.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-brand-sage text-lg mt-0.5">•</span>
+                <span class="font-sans text-sm text-brand-clay"><strong class="text-brand-dark">MuLearn Campus
+                    Coordinator:</strong> Connecting young minds to peer-to-peer open learning frameworks.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-brand-sage text-lg mt-0.5">•</span>
+                <span class="font-sans text-sm text-brand-clay"><strong class="text-brand-dark">Mini Project Team
+                    Leader:</strong> Steering software project implementation cycles with coordination and code
+                  standards.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category: Academic Excellence -->
+          <div
+            class="achievement-card border border-brand-champagne bg-white/70 p-8 rounded-3xl shadow-sm hover:shadow-md transition-all duration-300"
+            data-category="academics">
+            <div class="flex items-start gap-4 mb-6">
+              <div class="p-3 bg-brand-sage-light rounded-2xl text-brand-sage">
+                <!-- Graduate/Scroll Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.62 48.62 0 0112 20.904a48.62 48.62 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A5.905 5.905 0 018 3.443m4.26 6.704L12 9l-.26.147m0 0a50.57 50.57 0 012.658-.813A5.905 5.905 0 0116 3.443m-4 1.803a60.224 60.224 0 01-4.037-2.09c-.393-.24-.464-.78-.136-1.109a.507.507 0 01.318-.134c.186 0 .372.08.495.23L12 5.246m0 0l3.36-3.003a.507.507 0 01.318-.134c.186 0 .372.08.495.23L20.037 3.15c.328.329.257.87-.136 1.11A60.222 60.222 0 0116 6.356m-4-1.11v12.44" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-serif text-2xl text-brand-clay font-bold">Academic Excellence</h3>
+                <p class="font-sans text-xs text-brand-stone font-semibold uppercase tracking-widest mt-1">KTU MCA Joint
+                  Secretary & School Topper</p>
+              </div>
+            </div>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="text-brand-sage text-lg mt-0.5">•</span>
+                <span class="font-sans text-sm text-brand-clay"><strong class="text-brand-dark">KTU MCA Association
+                    Joint Secretary:</strong> Leading student-faculty collaborations and shaping technology curricula
+                  workflows.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-brand-sage text-lg mt-0.5">•</span>
+                <span class="font-sans text-sm text-brand-clay"><strong class="text-brand-dark">ASCA Committee
+                    Secretary:</strong> Appointed Secretary for the Association of Students of Computer Applications,
+                  COE.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-brand-sage text-lg mt-0.5">•</span>
+                <span class="font-sans text-sm text-brand-clay"><strong class="text-brand-dark">All-Time Class Topper &
+                    School Topper:</strong> Displaying consistent academic brilliance; the absolute pet of her
+                  teachers—a proud, worth gem.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category: NCC Military -->
+          <div
+            class="achievement-card border border-brand-champagne bg-white/70 p-8 rounded-3xl shadow-sm hover:shadow-md transition-all duration-300"
+            data-category="military">
+            <div class="flex items-start gap-4 mb-6">
+              <div class="p-3 bg-brand-sage-light rounded-2xl text-brand-sage">
+                <!-- Military/Shield Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0110.1 21a3.75 3.75 0 01-3.297-1.043 3.746 3.746 0 01-1.043-3.297A3.746 3.746 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0113.9 3a3.75 3.75 0 013.297 1.043 3.746 3.746 0 011.043 3.297A3.745 3.745 0 0121 12z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-serif text-2xl text-brand-clay font-bold">Military & Discipline</h3>
+                <p class="font-sans text-xs text-brand-stone font-semibold uppercase tracking-widest mt-1">Lance
+                  Corporal (LCPL) NCC Cadet</p>
+              </div>
+            </div>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="text-brand-sage text-lg mt-0.5">•</span>
+                <span class="font-sans text-sm text-brand-clay"><strong class="text-brand-dark">NCC Lance Corporal
+                    (LCPL):</strong> Exemplary dedication to nation, physical training, and absolute discipline
+                  code.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-brand-sage text-lg mt-0.5">•</span>
+                <span class="font-sans text-sm text-brand-clay"><strong class="text-brand-dark">Certificate
+                    Holder:</strong> Proud recipient of both NCC B and C Certificates, cleared with prestigious
+                  A Grade marks.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category: Special Title (Drift Queen) -->
+          <div id="drift-card"
+            class="achievement-card border border-brand-rose/40 bg-white/70 p-8 rounded-3xl shadow-sm hover:shadow-md transition-all duration-300 drift-track cursor-pointer select-none"
+            data-category="special">
+            <!-- Drift car absolute element -->
+            <div id="drift-car" class="drift-car">🏎️💨</div>
+
+            <div class="flex items-start gap-4 mb-6">
+              <div class="p-3 bg-brand-rose-light rounded-2xl text-brand-rose">
+                <!-- Crown / Steering Wheel SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.3 16.2L12 21l-3.3-4.8M12 21V9.75M12 9.75a3.75 3.75 0 110-7.5 3.75 3.75 0 010 7.5z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-serif text-2xl text-brand-clay font-bold">Special Title</h3>
+                <p class="font-sans text-xs text-brand-stone font-semibold uppercase tracking-widest mt-1">Tribute
+                  Easter Egg</p>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div>
+                <p class="font-serif text-3xl text-brand-rose italic font-semibold">"Drift Queen"</p>
+                <p class="font-sans text-sm text-brand-stone mt-3 leading-relaxed">
+                  A title that matches a dynamic personality!
+                  <span class="text-brand-sage font-medium block mt-2 animate-pulse">👉 Hover here or click this card to
+                    watch her drift!</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. Dynamic Photo Gallery Grid -->
+    <section class="py-20 px-6 md:px-12 bg-brand-champagne-light/30">
+      <div class="max-w-6xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="text-center mb-12 animate-on-scroll">
+          <span class="font-sans text-xs uppercase tracking-[0.4em] text-brand-stone font-semibold mb-2 block">Visual
+            Memory Scrapbook</span>
+          <h2 class="font-serif text-4xl md:text-5xl text-brand-clay">Moments & Memories</h2>
+          <div class="w-16 h-[2px] bg-brand-sage mx-auto mt-4"></div>
+        </div>
+
+        <!-- The Responsive Grid Container -->
+        <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+          <!-- Dynamically populated in JS -->
+        </div>
+
+        <!-- Explore More Button -->
+        <div id="load-more-container" class="text-center mt-12">
+          <button id="load-more-btn"
+            class="px-8 py-3 bg-white border border-brand-sage/50 text-brand-clay font-sans font-semibold tracking-wider uppercase rounded-full shadow-sm hover:bg-brand-sage hover:text-white transition-all duration-300 hover:scale-102 active:scale-98">
+            Explore More Moments
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Personal Letter Section -->
+    <section class="py-24 px-6 md:px-12 bg-white relative overflow-hidden">
+      <!-- Background elements for letter aesthetic -->
+      <div
+        class="absolute top-0 right-0 w-96 h-96 bg-brand-rose-light/40 rounded-full blur-3xl pointer-events-none -z-10">
+      </div>
+      <div
+        class="absolute bottom-0 left-0 w-96 h-96 bg-brand-sage-light/40 rounded-full blur-3xl pointer-events-none -z-10">
+      </div>
+
+      <div class="max-w-3xl mx-auto">
+
+        <!-- Frame mimicking premium fine letter stationary -->
+        <div
+          class="relative bg-brand-bg/50 p-8 md:p-12 lg:p-16 rounded-3xl border border-brand-champagne shadow-sm relative animate-on-scroll">
+
+          <!-- Wax Seal Decorative SVG -->
+          <div
+            class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-brand-rose text-white rounded-full flex items-center justify-center shadow-md border border-white">
+            <svg fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+              <path
+                d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z" />
+            </svg>
+          </div>
+
+          <!-- Letter Header -->
+          <div class="text-center mb-8 border-b border-brand-champagne/40 pb-6">
+            <h3 class="font-serif text-3xl italic text-brand-clay">For Nandana Anilkumar</h3>
+            <p class="font-sans text-xs uppercase tracking-widest text-brand-stone mt-1">A Sincere Birthday Message</p>
+          </div>
+
+          <!-- Letter Content -->
+          <div
+            class="font-serif text-lg md:text-xl text-brand-clay leading-relaxed tracking-wide space-y-8 text-justify opacity-90">
+            <p>
+              Hi... If you are reading this, it means the timer has finally run out, and the music is playing. There is
+              so much I have carried in my heart, and today, I just want to lay it down honestly. I want to say a
+              sincere, deeply felt sorry for all my faults and the mistakes I made during our time together. It breaks
+              my heart to know that I took an 11/10 daughter and somehow became a source of disappointment in her story.
+              I carry the heavy weight of knowing I left a dark mark on a life as bright as yours, and losing you is a
+              burden that rests entirely on my shoulders.
+            </p>
+            <p>
+              But amidst all the regrets, my heart is filled with an immense, overflowing gratitude for you. Thank you
+              for being my ultimate safe haven, my quiet stress buster when the world felt too loud. Thank you for being
+              the patient teacher who sat by me, helped me pass my semester exams, and sheltered me when I needed to
+              sneak my way through them. You were my anchor. You are, without a doubt, the prettiest girl I have ever
+              laid eyes on, both inside and out.
+            </p>
+            <p>
+              To be completely honest, looking back at everything, I still find myself in absolute disbelief. I look at who you are, and I can't quite wrap my head around the fact that I actually had a girlfriend this beautiful, this eligible, this incredibly talented, and so deeply mature. You were a league above everything else. And that is exactly where the sharpest ache comes from—realizing that letting you slip away is, and will always be, the single biggest regret and the greatest loss of my entire life. 
+            </p>
+            <p>
+              Looking at you now, I see you stepping into a beautiful new chapter. I know this birthday is incredibly
+              special for you—embracing a vibrant new city like Trivandrum, making new friends at CET, discovering more
+              freedom, and welcoming endless surprises. I can picture it all for you: the new best friends, the electric
+              nightlife, the midnight laughter over surprise cake cuttings, the quiet ocean breeze on beach dates, and
+              maybe even new hands reaching out to hold yours. I genuinely pray you enjoy every single second of this
+              beautiful life you are building. You deserve all the magic the world has to offer... but in the middle of
+              all the noise, I hope a small part of you still remembers me.
+            </p>
+            <p>
+              More than anything, I want to watch you conquer the world from afar. You have always been a force to be
+              reckoned with, and my biggest wish is to see you deeply successful in every single thing you touch—whether
+              you choose to conquer the world as a brilliant techie, an inspiring teacher, or a visionary entrepreneur.
+              I know you will build an incredible career and, someday, a beautiful family of your own, because you are
+              built for greatness.
+            </p>
+            <p class="italic text-center font-medium my-4 border-y border-brand-clay/10 py-4">
+              If we were still together today, I promise you I would have been a better person for you.
+            </p>
+            <p>
+              I am not rich enough right now to buy you the things you deserve—an iPhone 17 Pro Max, a new scooter, or a
+              Dyson hair care kit. But I wanted to give you something that money can't buy. As an aspiring software
+              developer, I poured my time, my memories of us, and my respect into building this website for you. It is a
+              digital tribute to a girl who is a flawless, priceless gem.
+            </p>
+            <p>
+              Please know deeply in your heart that this is not a hidden request, a manipulation, or a desperate plea to
+              get back into a relationship. It is simply a clean, genuine gift from a place of pure love and respect to
+              honor a worth gem who changed my life. Happy 22nd Birthday.
+            </p>
+          </div>
+
+          <!-- Letter Sign-off -->
+          <div class="mt-12 pt-6 border-t border-brand-champagne/40 flex flex-col items-end">
+            <span class="font-serif text-brand-stone italic text-sm">Sincerely,</span>
+            <span class="font-cursive text-4xl text-brand-sage mt-2 tracking-wide">— Joe</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. Footer & Hidden Signature -->
+    <footer class="py-12 px-6 bg-brand-dark text-white/90 text-center relative">
+      <div class="max-w-4xl mx-auto flex flex-col items-center">
+        <!-- Botanical Divider -->
+        <div class="w-12 h-12 text-brand-sage mb-4 opacity-50">
+          <svg fill="currentColor" viewBox="0 0 100 100" class="w-full h-full">
+            <path d="M50 15 C45 35 15 45 50 85 C85 45 55 35 50 15 Z" />
+          </svg>
+        </div>
+
+        <p class="font-serif text-lg italic tracking-wider mb-2 text-brand-champagne">Happy Birthday Nandana aka Kunju
+        </p>
+        <p class="font-sans text-xs text-white/40 tracking-widest uppercase mb-8"> Made with lots of love and
+          respect.</p>
+
+        <!-- Hidden Signature (Elegant and barely visible) -->
+        <p
+          class="font-serif text-[11px] text-white/10 select-none hover:text-white/30 transition-colors duration-500 tracking-wider">
+          Miss you Kunju not Nandana Anilkumar
+        </p>
+      </div>
+    </footer>
+
+    <!-- ================= FLOATING MUSIC PLAYER WIDGET ================= -->
+    <div id="music-player"
+      class="fixed bottom-6 right-6 z-40 bg-white/75 border border-brand-champagne/30 rounded-2xl p-3 flex items-center shadow-lg hover:shadow-xl transition-all duration-300 max-w-xs group glass select-none">
+
+      <!-- Animated Sound Wave Visualizer -->
+      <div id="wave-container" class="flex items-end gap-1 px-2 h-5 w-8">
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+      </div>
+
+      <!-- Track Details -->
+      <div class="flex flex-col ml-1 mr-4">
+        <span class="font-sans text-[10px] text-brand-stone font-semibold uppercase tracking-wider leading-none">Music
+          playing</span>
+        <span class="font-serif text-xs text-brand-clay font-bold mt-0.5 truncate max-w-[80px]">Oro Nokil</span>
+      </div>
+
+      <!-- Play / Pause Button -->
+      <button id="music-toggle-btn"
+        class="p-2 bg-brand-sage hover:bg-brand-clay text-white rounded-full transition-colors duration-300 active:scale-95">
+        <!-- Play / Pause SVGs -->
+        <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+          stroke="currentColor" class="w-4 h-4">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25v13.5m-7.5-13.5v13.5" />
+        </svg>
+        <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+          stroke="currentColor" class="w-4 h-4 hidden">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- ================= LIGHTBOX MODAL ================= -->
+  <div id="lightbox-modal"
+    class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md flex flex-col items-center justify-center p-4 transition-opacity duration-300">
+    <!-- Close Button -->
+    <button id="lightbox-close"
+      class="absolute top-6 right-6 text-white/70 hover:text-white p-2 rounded-full hover:bg-white/10 transition-colors z-50">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="w-8 h-8">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
+    <!-- Nav: Left -->
+    <button id="lightbox-prev"
+      class="absolute left-4 md:left-8 text-white/70 hover:text-white p-3 rounded-full hover:bg-white/10 transition-colors z-50">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+        class="w-8 h-8">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </button>
+
+    <!-- Center Image Frame -->
+    <div class="relative max-w-4xl max-h-[85vh] w-full flex flex-col items-center justify-center p-2">
+      <img id="lightbox-img" src="" alt="Active memory"
+        class="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl transition-all duration-300 transform scale-95 opacity-0">
+
+      <!-- Moment Caption Info -->
+      <div class="mt-4 text-center">
+        <p id="lightbox-caption" class="font-sans text-xs uppercase tracking-widest text-brand-champagne font-semibold">
+          Moment</p>
+      </div>
+    </div>
+
+    <!-- Nav: Right -->
+    <button id="lightbox-next"
+      class="absolute right-4 md:right-8 text-white/70 hover:text-white p-3 rounded-full hover:bg-white/10 transition-colors z-50">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+        class="w-8 h-8">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- ================= JAVASCRIPT ENGINE ================= -->
+  <script>
+    // 1. Gallery Images Paths Database (Complete list of 52 pictures requested)
+    const imagesDatabase = [
+
+      "pictures/shuttu1.webp",
+      "pictures/shuttu2.webp",
+      "pictures/shuttu3.webp",
+      "pictures/shuttu4.webp",
+      "pictures/shuttu5.webp",
+      "pictures/shuttu6.webp",
+      "pictures/shuttu7.webp",
+      "pictures/shuttu8.webp",
+      "pictures/shuttu9.webp",
+      "pictures/shuttu10.webp",
+      "pictures/shuttu11.webp",
+      "pictures/shuttu12.webp",
+      "pictures/shuttu13.webp",
+      "pictures/IMG_20250219_161059.webp",
+      "pictures/IMG-20230125-WA0020.webp",
+      "pictures/IMG-20230607-WA0024-01.webp",
+      "pictures/IMG-20230608-WA0005.webp",
+      "pictures/IMG-20230608-WA0007.webp",
+      "pictures/IMG-20230824-WA0206.webp",
+      "pictures/IMG-20230824-WA0207.webp",
+      "pictures/IMG-20230824-WA0214.webp",
+      "pictures/IMG-20230824-WA0217.webp",
+      "pictures/IMG-20230824-WA0218.webp",
+      "pictures/IMG-20230824-WA0219.webp",
+      "pictures/IMG-20230824-WA0395.webp",
+      "pictures/IMG-20230824-WA0396.webp",
+      "pictures/IMG-20231109-WA0032.webp",
+      "pictures/IMG-20231109-WA0033.webp",
+      "pictures/IMG-20240517-WA0206.webp",
+      "pictures/IMG-20240529-WA0058.webp",
+      "pictures/IMG-20240529-WA0059.webp",
+      "pictures/IMG-20240702-WA0001.webp",
+      "pictures/IMG_20230825_183830_724.webp",
+      "pictures/IMG_20231018_163747.jpg",
+      "pictures/IMG_20240114_123300.webp",
+      "pictures/IMG_20240712_131308.webp",
+      "pictures/IMG_20240821_162155.webp",
+      "pictures/IMG_20240821_162211.webp",
+      "pictures/IMG_20240821_162253.webp",
+      "pictures/IMG_20240821_162334.webp",
+      "pictures/IMG_20240821_162337.webp",
+      "pictures/IMG_20240821_162434.webp",
+      "pictures/IMG_20240821_162438.webp",
+      "pictures/IMG_20240821_162553.webp",
+      "pictures/IMG_20240821_162622.webp",
+      "pictures/IMG_20240821_162828.webp",
+      "pictures/IMG_20240821_163049.webp",
+      "pictures/IMG_20240821_163349.webp",
+      "pictures/IMG_20240821_163517.webp",
+      "pictures/IMG_20250219_160828.webp",
+      "pictures/IMG_20250219_160904.webp",
+      "pictures/IMG_20250219_160915.webp",
+      "pictures/IMG_20250219_161017.webp",
+      "pictures/IMG_20250219_161022.webp",
+      "pictures/IMG_20250219_161056.webp",
+      "pictures/Screenshot_2024-05-24-00-04-25-55_1c337646f29875672b5a61192b9010f9.webp",
+      "pictures/Snapchat-1021356069.webp",
+      "pictures/Snapchat-1276785733.webp",
+      "pictures/Snapchat-1451199206.webp",
+      "pictures/Snapchat-1957136010.webp"
+    ];
+
+    // Page state variables
+    let isTimerActive = true;
+    let bypassMode = false;
+    let audioPlaying = false;
+    let galleryIndex = 0; // Number of items loaded currently
+    const INITIAL_LOAD_COUNT = 12;
+
+    // Time-Gate Constants: June 24, 2026 12:00 AM IST (which is UTC: June 23, 2026, 18:30:00)
+    const targetUTC = Date.UTC(2026, 5, 23, 18, 30, 0); // 0-indexed month: June = 5
+    //
+    // Document elements cached
+    const elDays = document.getElementById('days');
+    const elHours = document.getElementById('hours');
+    const elMinutes = document.getElementById('minutes');
+    const elSeconds = document.getElementById('seconds');
+    const elCountdownWrapper = document.getElementById('countdown-wrapper');
+    const elActionContainer = document.getElementById('action-container');
+    const elUnlockMsg = document.getElementById('unlock-msg');
+    const elEnterBtn = document.getElementById('enter-btn');
+    const elUnlockScreen = document.getElementById('unlock-screen');
+    const elMainContent = document.getElementById('main-content');
+    const elBgAudio = document.getElementById('bg-audio');
+
+    // 2. Countdown Engine
+    function updateCountdown() {
+      if (bypassMode) return;
+
+      const now = Date.now();
+      const timeLeft = targetUTC - now;
+
+      if (timeLeft <= 0) {
+        // Target Date Reached
+        isTimerActive = false;
+        clearInterval(countdownInterval);
+        showUnlockTrigger();
+      } else {
+        // Calculate units
+        const daysVal = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hoursVal = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutesVal = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const secondsVal = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        // Format to double digits
+        elDays.innerText = String(daysVal).padStart(2, '0');
+        elHours.innerText = String(hoursVal).padStart(2, '0');
+        elMinutes.innerText = String(minutesVal).padStart(2, '0');
+        elSeconds.innerText = String(secondsVal).padStart(2, '0');
+      }
+    }
+
+    function showUnlockTrigger() {
+      // Hide timer layout smoothly
+      elCountdownWrapper.style.opacity = '0';
+      setTimeout(() => {
+        elCountdownWrapper.classList.add('hidden');
+        elUnlockMsg.innerText = "Welcome Nandana";
+        elUnlockMsg.classList.add('text-brand-sage', 'font-serif', 'normal-case', 'text-2xl');
+        elUnlockMsg.classList.remove('text-brand-stone', 'text-sm', 'uppercase');
+
+        // Show audio play / entry button
+        elActionContainer.classList.remove('hidden');
+        setTimeout(() => {
+          elActionContainer.classList.remove('opacity-0', 'translate-y-4');
+        }, 100);
+      }, 500);
+    }
+
+    // Set countdown interval
+    const countdownInterval = setInterval(updateCountdown, 1000);
+    updateCountdown(); // Run immediately
+
+    // 3. Bypass Engine (for dev test / previewing before target date)
+    // Supports query parameter: ?bypass=true
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('bypass') === 'true') {
+      bypassMode = true;
+      isTimerActive = false;
+      clearInterval(countdownInterval);
+      showUnlockTrigger();
+    }
+
+    // Supports triple clicking the "Unlocking on June 24." subtext
+    let clickCount = 0;
+    let clickTimer = null;
+    elUnlockMsg.addEventListener('click', () => {
+      if (!isTimerActive) return; // Ignore if already unlocked
+
+      clickCount++;
+      clearTimeout(clickTimer);
+
+      if (clickCount >= 3) {
+        bypassMode = true;
+        isTimerActive = false;
+        clearInterval(countdownInterval);
+        showUnlockTrigger();
+      } else {
+        clickTimer = setTimeout(() => { clickCount = 0; }, 1200);
+      }
+    });
+
+    // 4. Entry Audio & Page Reveal Transition
+    elEnterBtn.addEventListener('click', () => {
+      // Play Background Loop Audio (handles autoplay block on click)
+      elBgAudio.volume = 0.55;
+      elBgAudio.play().then(() => {
+        audioPlaying = true;
+        syncMusicWidgetState();
+      }).catch(err => {
+        console.warn("Audio autoplay blocked or song file missing: ", err);
+      });
+
+      // Fade out unlock card
+      elUnlockScreen.style.opacity = '0';
+      elUnlockScreen.style.transform = 'scale(1.05)';
+
+      // Reveal main layout
+      elMainContent.classList.remove('hidden');
+      setTimeout(() => {
+        elMainContent.classList.remove('opacity-0');
+        elUnlockScreen.classList.add('hidden');
+
+        // Initialize Scroll Observer animations & load photos
+        initScrollObserver();
+        loadInitialPhotos();
+      }, 1000);
+    });
+
+    // 5. Scroll-fade Scroll Animations
+    function initScrollObserver() {
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.05
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('opacity-100', 'translate-y-0');
+            entry.target.classList.remove('opacity-0', 'translate-y-10');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.animate-on-scroll').forEach(el => {
+        el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-1000', 'ease-out');
+        observer.observe(el);
+      });
+    }
+
+    // 6. Interactive Achievements Filter
+    function filterAchievements(category) {
+      const cards = document.querySelectorAll('.achievement-card');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      buttons.forEach(btn => {
+        if (btn.dataset.filter === category) {
+          btn.classList.add('bg-brand-sage', 'text-white');
+          btn.classList.remove('bg-white', 'text-brand-clay', 'border-brand-sage/20');
+        } else {
+          btn.classList.remove('bg-brand-sage', 'text-white');
+          btn.classList.add('bg-white', 'text-brand-clay', 'border-brand-sage/20');
+        }
+      });
+
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.classList.remove('hidden');
+          // Trigger smooth fade in grid elements
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'scale(1)';
+          }, 50);
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'scale(0.95)';
+          setTimeout(() => {
+            card.classList.add('hidden');
+          }, 200);
+        }
+      });
+    }
+
+    // "Drift Queen" easter egg animation trigger
+    const driftCard = document.getElementById('drift-card');
+    const driftCar = document.getElementById('drift-car');
+    if (driftCard && driftCar) {
+      const runDrift = () => {
+        if (driftCar.classList.contains('drifting')) return;
+        driftCar.classList.add('drifting');
+        setTimeout(() => {
+          driftCar.classList.remove('drifting');
+        }, 2500);
+      };
+      driftCard.addEventListener('mouseenter', runDrift);
+      driftCard.addEventListener('click', runDrift);
+    }
+
+    // 7. Dynamic Photo Gallery Engine with Lightbox
+    const elGalleryGrid = document.getElementById('gallery-grid');
+    const elLoadMoreBtn = document.getElementById('load-more-btn');
+    const elLoadMoreContainer = document.getElementById('load-more-container');
+    const elLightbox = document.getElementById('lightbox-modal');
+    const elLightboxImg = document.getElementById('lightbox-img');
+    const elLightboxCaption = document.getElementById('lightbox-caption');
+    const elLightboxClose = document.getElementById('lightbox-close');
+    const elLightboxPrev = document.getElementById('lightbox-prev');
+    const elLightboxNext = document.getElementById('lightbox-next');
+
+    let lightboxActiveIndex = 0;
+
+    function renderPhotoCard(src, index) {
+      const card = document.createElement('div');
+      card.className = "group relative overflow-hidden bg-white p-3 rounded-2xl border border-brand-champagne shadow-sm cursor-pointer transform transition-all duration-500 hover:scale-[1.03] hover:-rotate-1 hover:shadow-lg opacity-0 translate-y-6";
+      card.innerHTML = `
+        <div class="overflow-hidden rounded-xl h-48 md:h-60 bg-brand-champagne-light">
+          <img src="${src}" alt="Memory photo" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+        </div>
+        <div class="mt-2 text-center">
+          <span class="font-serif italic text-xs text-brand-stone">Moment ${index + 1}</span>
+        </div>
+      `;
+
+      // Click trigger for lightbox
+      card.addEventListener('click', () => openLightbox(index));
+
+      elGalleryGrid.appendChild(card);
+
+      // Smooth fade in
+      setTimeout(() => {
+        card.classList.remove('opacity-0', 'translate-y-6');
+      }, 50 * (index % INITIAL_LOAD_COUNT));
+    }
+
+    function loadInitialPhotos() {
+      const toLoad = imagesDatabase.slice(0, INITIAL_LOAD_COUNT);
+      toLoad.forEach((src, idx) => renderPhotoCard(src, idx));
+      galleryIndex = INITIAL_LOAD_COUNT;
+
+      if (galleryIndex >= imagesDatabase.length) {
+        elLoadMoreContainer.classList.add('hidden');
+      }
+    }
+
+    elLoadMoreBtn.addEventListener('click', () => {
+      const remaining = imagesDatabase.slice(galleryIndex);
+      remaining.forEach((src, idx) => {
+        renderPhotoCard(src, galleryIndex + idx);
+      });
+      galleryIndex = imagesDatabase.length;
+      elLoadMoreContainer.classList.add('hidden');
+    });
+
+    // Lightbox Functionality
+    function openLightbox(index) {
+      lightboxActiveIndex = index;
+      const src = imagesDatabase[index];
+
+      elLightboxImg.src = src;
+      elLightboxCaption.innerText = `Moment ${index + 1} of ${imagesDatabase.length}`;
+
+      elLightbox.classList.remove('hidden');
+      elLightbox.classList.add('flex');
+      document.body.classList.add('overflow-hidden'); // Lock background scrolling
+
+      setTimeout(() => {
+        elLightboxImg.classList.remove('opacity-0', 'scale-95');
+        elLightboxImg.classList.add('opacity-100', 'scale-100');
+      }, 50);
+    }
+
+    function closeLightbox() {
+      elLightboxImg.classList.add('opacity-0', 'scale-95');
+      elLightboxImg.classList.remove('opacity-100', 'scale-100');
+
+      setTimeout(() => {
+        elLightbox.classList.add('hidden');
+        elLightbox.classList.remove('flex');
+        document.body.classList.remove('overflow-hidden');
+      }, 300);
+    }
+
+    function navigateLightbox(direction) {
+      elLightboxImg.classList.add('opacity-0', 'scale-95');
+
+      setTimeout(() => {
+        lightboxActiveIndex = (lightboxActiveIndex + direction + imagesDatabase.length) % imagesDatabase.length;
+        const newSrc = imagesDatabase[lightboxActiveIndex];
+        elLightboxImg.src = newSrc;
+        elLightboxCaption.innerText = `Moment ${lightboxActiveIndex + 1} of ${imagesDatabase.length}`;
+
+        setTimeout(() => {
+          elLightboxImg.classList.remove('opacity-0', 'scale-95');
+          elLightboxImg.classList.add('opacity-100', 'scale-100');
+        }, 50);
+      }, 200);
+    }
+
+    elLightboxClose.addEventListener('click', closeLightbox);
+    elLightboxPrev.addEventListener('click', () => navigateLightbox(-1));
+    elLightboxNext.addEventListener('click', () => navigateLightbox(1));
+
+    // Keyboard support for Lightbox
+    window.addEventListener('keydown', (e) => {
+      if (elLightbox.classList.contains('hidden')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') navigateLightbox(-1);
+      if (e.key === 'ArrowRight') navigateLightbox(1);
+    });
+
+    // Close lightbox when clicking the blurred background
+    elLightbox.addEventListener('click', (e) => {
+      if (e.target === elLightbox) closeLightbox();
+    });
+
+    // 8. Floating Music Widget Controls
+    const elMusicToggle = document.getElementById('music-toggle-btn');
+    const elWaveContainer = document.getElementById('wave-container');
+    const elPlayIcon = document.getElementById('play-icon');
+    const elPauseIcon = document.getElementById('pause-icon');
+
+    function syncMusicWidgetState() {
+      if (audioPlaying) {
+        elWaveContainer.classList.add('wave-playing');
+        elPlayIcon.classList.add('hidden');
+        elPauseIcon.classList.remove('hidden');
+      } else {
+        elWaveContainer.classList.remove('wave-playing');
+        elPlayIcon.classList.remove('hidden');
+        elPauseIcon.classList.add('hidden');
+      }
+    }
+
+    elMusicToggle.addEventListener('click', () => {
+      if (audioPlaying) {
+        elBgAudio.pause();
+        audioPlaying = false;
+      } else {
+        elBgAudio.play().then(() => {
+          audioPlaying = true;
+        }).catch(err => console.error(err));
+      }
+      syncMusicWidgetState();
+    });
+
+    // 9. Falling Flower Petals Spawner
+    function createPetals() {
+      const container = document.getElementById('petals-container');
+      if (!container) return;
+
+      const colors = [
+        'rgba(232, 200, 190, 0.45)', // Rose tint
+        'rgba(234, 219, 200, 0.45)', // Champagne tint
+        'rgba(143, 151, 121, 0.25)'  // Sage tint
+      ];
+
+      setInterval(() => {
+        // Pause creation when tab is inactive to save system resource
+        if (document.hidden) return;
+
+        const petal = document.createElement('div');
+        petal.classList.add('petal');
+
+        const size = Math.random() * 14 + 10 + 'px';
+        petal.style.width = size;
+        petal.style.height = size;
+        petal.style.left = Math.random() * 100 + 'vw';
+        petal.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+
+        // Random falling properties
+        petal.style.animationDuration = Math.random() * 6 + 6 + 's'; // Between 6 and 12s
+        petal.style.animationDelay = Math.random() * 2 + 's';
+
+        container.appendChild(petal);
+
+        // Remove after completes fall
+        setTimeout(() => {
+          petal.remove();
+        }, 12000);
+      }, 420);
+    }
+
+    // Start generating background petals
+    createPetals();
+  </script>
+</body>
+
+</html>
